@@ -70,5 +70,5 @@ COPY ./index.html /var/www/html/
 ##################################
 # RUN a2enmod headers
 
-RUN chmod 440 -R /var/www/html/index.html
+RUN chmod 440 -R /var/www/
 # CMD chmod 440 -R /var/www/html/index.html
