@@ -57,7 +57,7 @@ RUN apt-get update && apt-get install -y \
 ##################################
 # 公開資産をドキュメントルートに
 ##################################
-COPY ./public/ /var/www/html/
+# COPY ./public/ /var/www/html/
 COPY ./index.html /var/www/html/
 
 ##################################
@@ -70,4 +70,4 @@ COPY ./index.html /var/www/html/
 ##################################
 # RUN a2enmod headers
 
-CMD chmod 440 -R /var/www/html/index.html
+# CMD chmod 440 -R /var/www/html/index.html
