@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install -y \
 #     && echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 #     && echo "Listen 8080" >> /etc/apache2/apache2.conf \
 #     && echo "Header set X-Frame-Options: sameorigin" >> /etc/apache2/conf-available/security.conf
-
+RUN echo "Listen 8080" >> /etc/apache2/apache2.conf
 
 ##################################
 # mpm_prefork.conf差し替え
