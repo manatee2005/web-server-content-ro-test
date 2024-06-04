@@ -38,6 +38,12 @@ RUN apt-get update && apt-get install -y \
 #     && echo "Listen 8080" >> /etc/apache2/apache2.conf \
 #     && echo "Header set X-Frame-Options: sameorigin" >> /etc/apache2/conf-available/security.conf
 
+
+##################################
+# mpm_prefork.conf差し替え
+##################################
+COPY ./infra/mpm_prefork.conf /etc/apache2/mods-available/
+
 ##################################
 # pnp.ini 変更/追加キー情報反映
 ##################################
